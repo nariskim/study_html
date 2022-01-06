@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+<meta charset = "uTF-8">
+<meta name = "viewport" content="width=divice-width, initial-scale=1.0">
+<title> Nari</title> 
+
+</head>
+
+<body>
+
+	<form action="./formResult.html" method="post" id="form" name="form" enctype="multipart/form-data">
+		
+		<!-- <input type="search" id="search" name="search"> -->
+		<!-- <input type="url" id="url" name="url"> -->		
+		<!-- <input type="email" id="email" name="email"> -->
+		<input type="tel" id="tel" name="tel">
+		<input type="submit" value="제출">
+	
+	
+	</form>
+
+
+	<script type = "text/javascript">
+		function here(){
+			
+			if(document.getElementById("password2").value != document.GetElementById("password3").value){
+				alert("패스워드가 일치 하지 않습니다!");
+				document.getElementById("password2").value = "";
+				document.getElementById("password3").value = "";
+				document.getElementById("password2").focus();
+				return false;
+			}else {
+				alert("일치합니다!");
+			}
+			
+			
+			
+			
+			document.getElementById("form").submit();
+		}	
+	
+	
+	</script>
+
+
+</body>
+
+</html>
+
+
+
+
+
