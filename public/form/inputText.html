@@ -10,12 +10,14 @@
 
 <body>
 
-	<form action=""method="post" id="form" name="" enctype="multiport/form-data">
-	<br>	<input type="text" id="id1" name="id1">
-	<br>	<input type="text" id="" name="" autofocus="autofocus">
+	<form action="" method="get" id="form" name="" enctype="multiport/form-data">
+<!-- 	<br>	<input type="text" id="id1" name="id1">
+	<br>	<input type="text" id="" name="" value="nariskim" autofocus="autofocus">
+	<br>	<input type="text" id="" name="" value="nariskim" autofocus="autofocus" disabled="disabled">
+	<br>	<input type="text" id="" name="" value="nariskim" autofocus="autofocus" readonly="readonly">
+	<br>	<input type="text" id="" name="" placeholder="nariskim">
 	<br>	<input type="text" id="" name="" size="50">
 	<br>	<input type="text" id="" name="" maxlength="20">
-	<br>	<input type="text" id="" name="" placeholder="아이디">
 	<br>	<input type="text" id="" name="" value="rhdee">
 	<br>	<input type="text" id="" name="" size="50" placeholder="" value="rhdee">
 	<br>	<input type="text" id="" name="" >
@@ -24,16 +26,31 @@
 	<br>	<input type="button" id="button" name="button" value="제출"	onclick="here();">
 	
 	</form>
-
+	
+	<br>
+	<select disabled="disabled">
+		<option>1</option>
+		<option selected>2</option>
+		<option>3</option>
+	</select>
+	 -->
+	<P>여기부터 hidden</P>
+	<input type="hidden" id="" name="hidden" value="yes">
+	<p>여기까지 hidden</p>
+	
+	<br><input type="submit" name="submit">
+	
+	<!-- <br><input type="button" id="button" name="button" value="제출" onclick="here();" 
 	
 	<script type = "text/javascript">
-		function here(){
-			alert("id1:"+ document.getElementById("id1").value);
+			/* validation */
+	function here(){
+			alert("hidden:"+ document.getElementById("hidden").value);
 			document.getElementById("form").submit();
 		}	
 	
 	
-	</script>
+	</script> -->
 
 
 </body>
